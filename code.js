@@ -1,6 +1,5 @@
 const formAction = document.getElementById("form_control")
 const visorRes = document.getElementById("resHTML")
-/* const valTextArea = document.getElementById("textterArea").value*/
 function encriptar (texto){
 	var textoCifrado = texto.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
 	visorRes.innerHTML = textoCifrado

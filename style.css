@@ -8,6 +8,7 @@
 body{
     background: #16213E;
     padding-top: 50px;
+    
 }
 header{
     background: #0F3460;
@@ -36,7 +37,7 @@ main{
     width: 90%;
     min-height: 300px;
     padding: 15px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 .view_res{
     background: #533483;
@@ -89,6 +90,12 @@ label input{
     font-family: monospace;
     font-weight: 600;
     padding: 3px;
+    transition: all .1s;
+}
+.controls form button:active{
+    background: #fff;
+    color: #E94560;
+
 }
 .box_textarea{
     width: 100%;
@@ -107,12 +114,32 @@ textarea{
     border: none;
     font-size: 15px;
     resize: vertical;
+    max-height: 350px;
 }
 textarea::selection{background: #E94560;}
 textarea:focus{
     outline: none;
     background: #11192f;
     border: none;
+}
+footer{
+    background: #E94560;
+    margin-top: 20px;
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
+    padding: 10px;
+    display: flex;
+   
+    font-family: sans-serif;
+    justify-self: flex-end; 
+}
+footer div{
+    margin-left: 20px;
+}
+footer div:nth-child(1){
+    border-right: #fff 2px solid;
+    padding-right: 5px;
 }
 
 
@@ -134,6 +161,15 @@ textarea:focus{
         align-self: flex-start;
         margin: 20px;
         
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        
+    }
+    footer div:nth-child(1){
+        border-right: #fff 2px solid;
+        padding-right: 20px;
     }
 }
 
